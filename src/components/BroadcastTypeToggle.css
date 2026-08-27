@@ -1,0 +1,8 @@
+.broadcast-type-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.broadcast-type-toggle button.active {
+  font-weight: bold;
+}

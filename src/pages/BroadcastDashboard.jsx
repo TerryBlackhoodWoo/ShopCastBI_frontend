@@ -4,7 +4,7 @@ import BroadcastListTable from '../components/BroadcastListTable'
 import { BROADCAST_TYPE } from '../constants/broadcastType'
 import { REQUEST_STATUS } from '../constants/requestStatus'
 
-const API_BASE_URL = 'http://localhost:4000'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:4000'
 
 function BroadcastDashboard() {
   // 라방(live) API가 아직 검증 중이라 토글을 임시로 숨기고 홈쇼핑 고정.
